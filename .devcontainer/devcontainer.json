@@ -24,7 +24,7 @@
 				"go.gopath": "/go",
 				"python.defaultInterpreterPath": "/home/codespace/venv/bin/python",
 				"python.linting.enabled": true,
-				"python.linting.pylintEnabled": true,
+        "python.linting.pylintEnabled": true,
 				"python.formatting.autopep8Path": "/home/codespace/venv/bin/autopep8",
 				"python.formatting.blackPath": "/home/codespace/venv/bin/black",
 				"python.formatting.yapfPath": "/home/codespace/venv/bin/yapf",
@@ -51,13 +51,11 @@
 				"ms-toolsai.jupyter-renderers",
 				"ms-python.vscode-pylance",
 				"ms-python.python",
-				"ms-vscode.makefile-tools",
-				"github.vscode-github-actions",
-				"GitHub.copilot-chat"
+				"ms-vscode.makefile-tools"
 			]
 		}
 	},
-
+  
 	"remoteUser": "codespace",
 
 	"overrideCommand": false,
