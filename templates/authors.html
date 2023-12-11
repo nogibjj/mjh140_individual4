@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hugging Face Model Demo</title>
+    <title>Hugging Face Text Generation Model</title>
     <link rel="stylesheet" href="../static/css/styles.css">
 </head>
 <body>
     <div class="container">
-        <h2>What jobs would I be good at based on my traits/skills?</h2>
+        <h2>What books should I read if these are my favorite authors:</h2>
         <form action="/generate" method="post">
-            <label for="prompt">Enter a few of your best personality traits and/or skills:</label><br>
+            <label for="prompt">Enter a list of a few or your favorite authors:</label><br>
             <input type="text" id="prompt" name="prompt"><br><br>
             <input type="submit" value="Generate">
         </form>

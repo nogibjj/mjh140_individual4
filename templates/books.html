@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hugging Face Text Generation Model</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recommended Books</h1>
+        <p>Based on your authors, here are some recommended books:</p>
+
+        <div class="books">
+            {{ books_response|safe }}
+        </div>
+    </div>
+</body>
+</html>

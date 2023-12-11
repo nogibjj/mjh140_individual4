@@ -10,35 +10,30 @@ set_seed(42)  # Optional: Set a seed for reproducibility
 
 @app.route("/")
 def index():
-    return render_template("traits.html")
+    return render_template("authors.html")
 
 
 @app.route("/generate", methods=["POST"])
 def generate():
     if request.method == "POST":
-        input_traits = request.form["prompt"]
+        authors = request.form["prompt"]
 
-        # Construct the prompt sentence
-        prompt = f"The best professions for someone with the following traits and/or skills {input_traits} are:"
+        prompt = f"What are five books I should read if my favorite authors are: {authors}?"
 
         # Generate text using GPT-2 based on the constructed prompt
         generated_texts = text_generator(
             prompt,
-            max_length=50,
-            num_return_sequences=3,
+            num_return_sequences=1,
             temperature=0.7,
             top_k=50,
             top_p=0.95,
         )
 
         # Extract the generated texts excluding the original prompt
-        generated_professions = [
-            generated_text["generated_text"].replace(prompt, "")
-            for generated_text in generated_texts
-        ]
+        books = generated_texts[0]["generated_text"].replace(prompt, "")
 
         return render_template(
-            "professions.html", generated_professions=generated_professions
+            "books.html", books_response=books
         )
 
 
