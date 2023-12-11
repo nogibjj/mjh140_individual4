@@ -20,7 +20,7 @@ Below are screenshots from the web application using an example city of `San Fra
 
 ## Docker
 
-The flask application is containerized using a [Docker File]. The docker container is stored in DockerHub. 
+The flask application is containerized using a [Docker File](https://github.com/nogibjj/mjh140_individual4/blob/main/Dockerfile). The docker container is stored in DockerHub. 
 
 ![image](https://github.com/nogibjj/mjh140_individual4/assets/114833075/377354e5-27dd-4d3b-b749-064ad056bbf0)
 
