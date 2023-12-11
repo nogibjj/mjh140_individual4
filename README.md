@@ -1,1 +1,1 @@
-## Hugging Face Text Generation Flas Application
+## Hugging Face Text Generation Flask Application
