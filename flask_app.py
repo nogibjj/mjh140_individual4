@@ -23,9 +23,8 @@ def generate():
         # Generate text using GPT-2 based on the constructed prompt
         generated_texts = text_generator(
             prompt,
-            max_length=50,
             num_return_sequences=1,
-            temperature=0.6,
+            temperature=0.7,
             top_k=70,
             top_p=0.95,
         )
