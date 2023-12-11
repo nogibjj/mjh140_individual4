@@ -8,4 +8,4 @@ The objective of this repository is to build a publicly available auto-scaling w
 
 For this project, I am deploying a Hugging Face Text Generation LLM in a simple application that returns five recommeded books when provided a list of the user's favorite authors.
 
-
+Here is a video walkthrough of the project: [Hugging Face Text Generation Flask Application](https://youtu.be/O8N_M_vYYnA)
